@@ -1,0 +1,31 @@
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+*.[oa]
+*~
+Makefile*
+*.so
+*.so*
+moc_*.cpp
+*.user
+debug
+release
+GeneratedFiles
+*.moc
+*.Debug
+*.Release
+*.xcodeproj
+*.plist
+
+bin/Win32/Setup/QCompress.exe
+bin/Win32/Setup/macchangeqt.exe
+bin/Win32/Setup/macdeployqt.exe
+*.mp4
+bin/Win32/Media/
+3rdParty/Win32/VLC/uninstall.log
+bin/Win32/Deleted_Media/
+bin/Win32/UnitTests/*.exe
+bin/Win32/UnitTests/*.*
+bin/Win32/UnitTests/
+bin/Win32/Snapshots/video_snapshot_0.png
+*.orig
+bin/Win32/Package/
