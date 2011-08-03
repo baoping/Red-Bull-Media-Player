@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module
+    name="Root"
+    minVersion="1.0.0"
+    library="RootModule">
+	<ModuleConfig
+	    instanceName="DefaultInstance"
+	    UIRegion="Root"
+	/>
+        <Module
+	    name="MediaLibrary"
+	    min="1.0.0"
+            library="MediaLibraryModule">
+	    <ModuleConfig
+		instanceName="DefaultInstance"
+	    />
+	</Module>
+        <Module
+            name="StyleFactory"
+            min="1.0.0"
+            library="StyleFactoryModule">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+        </Module>
+        <Module
+            name="CentralUI"
+            minVersion="1.0.0"
+            library="CentralUIModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="CentralRegion" />
+        </Module>
+        <Module
+            name="PlaylistUI"
+            minVersion="1.0.0"
+            library="PlaylistUIModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlaylistRegion" />
+        </Module>
+        <Module
+            name="GridViewPlaylist"
+            minVersion="1.0.0"
+            library="GridViewPlaylistModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="GridViewPlaylistRegion" />
+        </Module>
+        <Module
+            name="CoverViewPlaylist"
+            minVersion="1.0.0"
+            library="CoverViewPlaylistModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="CoverViewPlaylistRegion" />
+        </Module>
+        <Module
+            name="ListViewPlaylist"
+            minVersion="1.0.0"
+            library="ListViewPlaylistModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ListViewPlaylistRegion" />
+        </Module>
+        <Module
+            name="Player"
+            minVersion="1.0.0"
+            library="PlayerModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlayerRegion" />
+        </Module>
+        <Module
+            name="ControllBar"
+            minVersion="1.0.0"
+            library="ControllBarModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ControllBarRegion" />
+        </Module>
+        <Module
+            name="SeekBar"
+            minVersion="1.0.0"
+            library="SeekBarModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="SeekBarRegion" />
+        </Module>
+        <Module
+            name="VolumeBar"
+            minVersion="1.0.0"
+            library="VolumeBarModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="VolumeBarRegion" />
+        </Module>
+        <Module
+            name="ChapterSelect"
+            minVersion="1.0.0"
+            library="ChapterSelectModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ChapterSelectRegion" />
+        </Module>
+        <Module
+            name="PlayerCloseButton"
+            minVersion="1.0.0"
+            library="PlayerCloseButtonModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlayerCloseButtonRegion" />
+        </Module>
+        <Module
+            name="TopUI"
+            minVersion="1.0.0"
+            library="TopUIModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="TopRegion" />
+        </Module>
+        <Module
+            name="SearchUI"
+            minVersion="1.0.0"
+            library="SearchUIModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="SearchRegion" />
+        </Module>
+        <Module
+            name="BottomUI"
+            minVersion="1.0.0"
+            library="BottomUIModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="BottomRegion" />
+        </Module>
+        <Module
+            name="FunctionSelect"
+            minVersion="1.0.0"
+            library="FunctionSelectModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="FunctionSelectRegion" />
+        </Module>
+	<Module
+	    name="NewsTicker"
+	    minVersion="1.0.0"
+            library="NewsTickerModule">
+		<ModuleConfig
+		    instanceName="DefaultNewsTicker"
+                    UIRegion="NewsTickerRegion" />
+	</Module>
+        <Module
+            name="NewsDetailView"
+            minVersion="1.0.0"
+            library="NewsDetailViewModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="NewsDetailViewRegion" />
+        </Module>
+        <Module
+            name="AboutDetailView"
+            minVersion="1.0.0"
+            library="AboutDetailViewModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="AboutDetailViewRegion" />
+        </Module>
+        <Module
+            name="SettingsDetailView"
+            minVersion="1.0.0"
+            library="SettingsDetailViewModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="SettingsDetailViewRegion" />
+        </Module>
+        <Module
+	    name="SnapshotCreator"
+	    minVersion="1.0.0"
+            library="SnapshotCreatorModule">
+		<ModuleConfig
+		    instanceName="DefaultInstance" />
+	</Module>
+        <Module
+            name="ContentManagement"
+            min="1.0.0"
+            library="ContentManagementModule">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+        </Module>          
+        <Module
+            name="AlbumCoverCollector"
+            minVersion="1.0.0"
+            library="AlbumCoverCollectorModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="PlayerUpdateChecker"
+            minVersion="1.0.0"
+            library="PlayerUpdateCheckerModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="TaskManager"
+            minVersion="1.0.0"
+            library="TaskManagerModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="StateDisplay"
+            minVersion="1.0.0"
+            library="StateDisplayModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="MediaWatcher"
+            minVersion="1.0.0"
+            library="MediaWatcherModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="Statistics"
+            minVersion="1.0.0"
+            library="StatisticsModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="InternetConnectionChecker"
+            min="1.0.0"
+            library="InternetConnectionCheckerModule">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+        </Module>
+        <Module
+            name="UserSettings"
+            min="1.0.0"
+            library="UserSettingsModule">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+        </Module>
+        <Module
+            name="UpdateInstaller"
+            min="1.0.0"
+            library="UpdateInstallerModule">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+        </Module>
+        <Module
+            name="PlaylistCreator"
+            minVersion="1.0.0"
+            library="PlaylistCreatorModule">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+             name="XmlNewsFeed"
+             min="1.0.0"
+             library="XmlNewsFeedModule">
+             <ModuleConfig
+                 instanceName="DefaultInstance" />
+         </Module>
+</Module>

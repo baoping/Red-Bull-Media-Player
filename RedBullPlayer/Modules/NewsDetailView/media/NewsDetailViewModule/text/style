@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{#FeedTitle}</title>
+<style type="text/css">
+body {
+	font-family: Arial, sans-serif;
+	font-size:16px;
+	}
+.red {
+	font-weight:bold;
+	color:#bd1212;
+	font-family: Arial, sans-serif;
+	font-size:16px;
+	}
+p {
+	font-family: Arial, sans-serif;
+	font-size:16px;	
+	color:#0a0a0a;
+	}
+a:link {
+	text-decoration:underline;	 
+	color:#0a0a0a;
+	}
+a:hover { 
+	text-decoration:none;
+	color:#bd1212;
+	}
+
+</style>
+</head>
+<body>
+{#Feed}
+</body></html>

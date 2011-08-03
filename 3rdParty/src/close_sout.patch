@@ -1,0 +1,40 @@
+diff --git a/include/vlc_input.h b/include/vlc_input.h
+index e548692..09302b3 100644
+--- a/include/vlc_input.h
++++ b/include/vlc_input.h
+@@ -673,6 +673,11 @@ VLC_EXPORT(void, input_resource_Release, ( input_resource_t * ) );
+ VLC_EXPORT(void, input_resource_TerminateVout, ( input_resource_t * ) );
+ 
+ /**
++* Forcefully destroys the stream output (e.g. when the playlist is stopped).
++*/
++VLC_EXPORT(void, input_resource_TerminateSout, ( input_resource_t * ) );
++
++/**
+  * This function releases all resources (object).
+  */
+ VLC_EXPORT( void, input_resource_Terminate, ( input_resource_t * ) );
+diff --git a/src/control/media_player.c b/src/control/media_player.c
+index 3789ddf..8984ca5 100644
+--- a/src/control/media_player.c
++++ b/src/control/media_player.c
+@@ -794,7 +794,10 @@ void libvlc_media_player_stop( libvlc_media_player_t *p_mi )
+     }
+ 
+     if( p_mi->input.p_resource != NULL )
++    {   
+         input_resource_TerminateVout( p_mi->input.p_resource );
++        input_resource_TerminateSout( p_mi->input.p_resource );
++    } 
+     unlock_input(p_mi);
+ }
+ 
+diff --git a/src/libvlccore.sym b/src/libvlccore.sym
+index 413ab79..3fc7c46 100644
+--- a/src/libvlccore.sym
++++ b/src/libvlccore.sym
+@@ -676,3 +676,4 @@ xml_ReaderDelete
+ xml_ReaderReset
+ KeyToString
+ StringToKey
++input_resource_TerminateSout

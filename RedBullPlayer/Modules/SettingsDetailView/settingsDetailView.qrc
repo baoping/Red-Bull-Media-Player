@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/" >
+        <file alias="down" >imagesResources/arrow_down.png</file>
+        <file alias="up" >imagesResources/arrow_up.png</file>
+        <file alias="slider" >imagesResources/scrollBar_slider.png</file>
+        <file alias="checked" >imagesResources/checked.png</file>
+        <file alias="unchecked" >imagesResources/unchecked.png</file>
+        <file alias="spin_plus" >imagesResources/loop_add.png</file>
+        <file alias="spin_minus" >imagesResources/loop_remove.png</file>
+        <file alias="spin_background" >imagesResources/spin_background.png</file>
+        <file alias="scroll_background" >imagesResources/scrollBar_background.png</file>
+    </qresource>
+</RCC>

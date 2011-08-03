@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vju xmlns="http://www.2vju.com/vsr" serverId="AIRStream Server" channelId="1" serverTime="1250085110609">
+  <block id="24" name="AirStream Ticker Block" start="1250085110609" duration="150000" valid="true" type="1">
+    <ticker name="ticker-1" id="4a87a3de-592e-4281-b122-e0c9e07ffd6e" start="10" duration="20" flextime="false" padding="0" partcount="10" template="airstream-ticker">
+      <screenparts>
+	<screenpart id="59b88b09-161a-40b9-8938-1c1aac50314f" name="ticker-1-1" start="10" duration="20" padding="0">
+	  <fadein>30</fadein>
+	  <fadeout>40</fadeout>
+	  <text name="text-1">
+	    <textitem id="e386e193-f1a3-4423-927f-b99bdc45bea5" start="50" duration="60">
+	      <fadein>70</fadein>
+	      <fadeout>80</fadeout>
+	      <content><![CDATA[TestContent]]></content>
+	      <link type="90"><![CDATA[TestLink]]></link>
+	    </textitem>
+	  </text>
+	</screenpart>
+	 <screenpart id="99b88b09-161a-40b9-8938-1c1aac50314f" name="ticker-1-2" start="110" duration="220" padding="0">
+	  <fadein>330</fadein>
+	  <fadeout>440</fadeout>
+	  <text name="text-1">
+	    <textitem id="e386e122-f1a3-4423-927f-b99bdc45bea5" start="550" duration="660">
+	      <fadein>770</fadein>
+	      <fadeout>880</fadeout>
+	      <content><![CDATA[TestContent2]]></content>
+	      <link type="990"><![CDATA[TestLink2]]></link>
+	    </textitem>
+	  </text>
+	</screenpart>
+       </screenparts>
+    </ticker>
+  </block>
+</vju>
+

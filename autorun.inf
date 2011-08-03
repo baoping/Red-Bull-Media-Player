@@ -1,0 +1,15 @@
+[Autorun]
+open=RedBullMediaPlayer-Windows.exe
+icon=RedBullMediaPlayer-Windows.exe,0
+label=Red Bull Media Stick
+action=Red Bull Media Player
+UseAutoPlay=1
+
+[Content]
+MusicFiles=Y
+PictureFiles=Y
+VideoFiles=Y
+
+[ExclusiveContentPaths]
+\
+\Media

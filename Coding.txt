@@ -1,0 +1,8 @@
+Styleguide
+----------
+
+astyle (http://astyle.sourceforge.net) options
+used to format source:
+astyle -A2 -C -S- K -N -Y -f -p -D -xd <file>
+
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vju xmlns="http://www.2vju.com/vsr" serverId="AIRStream Server" channelId="1" serverTime="1250085110609">
+  <block id="24" name="AirStream Ticker Block" start="1250085110609" duration="150000" valid="true" type="1">
+    <ticker name="ticker-1" id="4a87a3de-592e-4281-b122-e0c9e07ffd6e" start="0" duration="150000" flextime="false" padding="0" partcount="10" template="airstream-ticker">
+      <screenparts>
+        <screenpart id="59b88b09-161a-40b9-8938-1c1aac50314f" name="ticker-1-1" start="0" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="e386e193-f1a3-4423-927f-b99bdc45bea5" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[Brian Vickers finished the Coke Zero 400 Cup at Daytona in seventh place. He was able to celebrate his seventh Top 10 Finish of the season.]]></content>
+              <link type="0"><![CDATA[http://www.teamredbull.com]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="07fa1127-ee7c-47ef-8995-068d30339e27" name="ticker-1-2" start="15000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="7c9433dc-35ef-484a-85fd-2b739943e141" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to\nMonaco\n (820 km).On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km). On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km) .On July 19th, 2009 30 athletes are going to fly or hike from Salzburg to Monaco (820 km)]]></content>
+              <link type="0"><![CDATA[http://www.redbull.ca/#page=ArticlePage.1234467085874-690035534]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="63e0bd71-825f-4652-8716-2874929098bd" name="ticker-1-3" start="30000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="ed6cc2f1-b3ee-40d2-a2ae-e6a61555f517" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[The Red Bull Music Academy will return to London in 2010. Applications are open until 27th of July.]]></content>
+              <link type="2"><![CDATA[http://www.redbull.com.au/academy]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="fb6dafe1-3f1a-4f76-8cbf-2b0f6b1824ee" name="ticker-1-4" start="45000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="a7159e4e-1dd1-434e-bc93-2cb901332034" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[The Red Bull Racing Team took the 1st and 2nd place at the Formula 1 Grand Prix in Silverstone, Britain.]]></content>
+              <link type="2"><![CDATA[http://]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="01395449-e46c-449d-abf2-b29c112a3353" name="ticker-1-5" start="60000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="7ef6e59f-e5ef-471f-9951-8c6cbbc44ba7" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[After Red Bull Salzburg and Red Bull New York, RB Leipzig is the third soccerteam, which is sponsered by Red Bull.]]></content>
+              <link type="1"><![CDATA[http://rb-leipzig-fan.de]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="9deb7242-07df-4f92-aced-ffd5ff0aa9be" name="ticker-1-6" start="75000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="b2af139f-01c7-428f-afc4-cadb2c9f7dca" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[215.000 spectators were witnesses of Paul Bonhammes` victory of the first Red Bull Aire Race in Canada.]]></content>
+              <link type="-1"><![CDATA[http://]]></link>
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="36f2f6d3-6b11-4d56-b590-3336c52e0c5d" name="ticker-1-7" start="90000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="7865233c-1dd0-460d-8305-f486554cd372" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[asdf asdf sadf adsf asdf ]]></content>
+              <link />
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="41c1820e-fde9-4efe-b5d7-48097dd1d877" name="ticker-1-8" start="105000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="badf9f4d-92f0-4753-a0bb-284f03beffa7" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[asdf asdf asdf asdf ]]></content>
+              <link />
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="589ff992-0d02-4aaa-bb47-4ab0e64f3aa2" name="ticker-1-9" start="120000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="45cf69c2-4f46-4240-a984-9c9619d0d33b" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[asdf asdf adsf asdf asdf ]]></content>
+              <link />
+            </textitem>
+          </text>
+        </screenpart>
+        <screenpart id="aa7dcb53-e979-449d-8489-1b604e4a1873" name="ticker-1-10" start="135000" duration="15000" padding="0">
+          <fadein>2000</fadein>
+          <fadeout>2000</fadeout>
+          <text name="text-1">
+            <textitem id="d1dbadd5-c3e8-4eff-9bed-d55dd09d773b" start="0" duration="15000">
+              <fadein>2000</fadein>
+              <fadeout>2000</fadeout>
+              <content><![CDATA[asdf a sdgadfg dsfg adsg fasdf asdf asdf asdf]]></content>
+              <link />
+            </textitem>
+          </text>
+        </screenpart>
+      </screenparts>
+    </ticker>
+  </block>
+</vju>

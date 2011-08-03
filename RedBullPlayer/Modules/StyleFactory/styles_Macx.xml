@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextStyles>
+
+    <TextStyle name="SearchUI_SearchBoxText">
+        <Font>Tahoma</Font>
+        <Size>14</Size>
+        <Bold/>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="TopRegion_TitleText">
+        <Font>Tahoma</Font>
+        <Size>16</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="TopRegion_TitleText_Dark">
+        <Font>Tahoma</Font>
+        <Size>16</Size>
+        <Color r="49" g="53" b="63" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+
+    <TextStyle name="CoverView_HeaderText">
+        <Font>Microsoft Sans Serif</Font>
+        <Size>18</Size>
+        <Color r="224" g="0" b="62" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="DeleteBox_Text">
+        <Font>Tahoma</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="AboutBox_HeaderText">
+        <Font>Tahoma</Font>
+        <Size>16</Size>
+        <Bold/>
+        <Color r="224" g="0" b="62" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+<TextStyle name="ControlBar_HeaderText">
+        <Font>Verdana</Font>
+        <Size>12</Size>
+        <Color r="208" g="210" b="211" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="CtrlBar_TimeLine_Text_aktiv">
+        <Font>Verdana</Font>
+        <Size>11</Size>
+        <Color r="224" g="0" b="62" a="255"/>
+        <HAlign>right</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="CtrlBar_TimeLine_Text_gesamt">
+        <Font>Verdana</Font>
+        <Size>11</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="GridView_FilenameText">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+    </TextStyle>
+
+    <TextStyle name="ListView_Spalten_HeaderText">
+        <Font>Microsoft Sans Serif</Font>
+        <Size>14</Size>
+        <Color r="208" g="210" b="211" a="255"/>
+    </TextStyle>
+
+    <TextStyle name="ListView_Text">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+    </TextStyle>
+
+    <TextStyle name="ListView_Text_markiert">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="224" g="0" b="62" a="255"/>
+    </TextStyle>
+
+    <TextStyle name="NewsDetailView_TitleText">
+        <Font>Verdana</Font>
+        <Size>20</Size>
+        <Bold/>
+        <Color r="224" g="0" b="62" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+     <TextStyle name="NewsDetailView_PublishingDateText">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+     <TextStyle name="NewsDetailView_LinkText">
+        <Font>Verdana</Font>
+        <Size>11</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>right</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+     <TextStyle name="NewsDetailView_DescriptionText">
+        <Font>Verdana</Font>
+        <Size>15</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+        <Italic/>
+    </TextStyle>
+
+    <TextStyle name="StateView_HeaderText">
+        <Font>Verdana</Font>
+        <Size>13</Size>
+        <Bold/>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="TaskView_ListText">
+        <Font>Verdana</Font>
+        <Size>11</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="UserSettingsDialog_Text">
+        <Font>Verdana</Font>
+        <Size>12</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="SettingsBox_HeaderText">
+        <Font>Verdana</Font>
+        <Size>21</Size>
+        <Bold/>
+        <Color r="224" g="0" b="62" a="255"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+     <TextStyle name="SettingsSection_Title">
+        <Font>Verdana</Font>
+        <Size>17</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+     <TextStyle name="SettingsSubSection_Title">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="Settings_Label">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="Settings_FileExtensions_Label">
+        <Font>Verdana</Font>
+        <Size>12</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="SettingsTextBox_Text">
+        <Font>Verdana</Font>
+        <Size>13</Size>
+        <Color r="32" g="32" b="32" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="ContentManagement_Tab_Title">
+        <Font>Verdana</Font>
+        <Size>14</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="ContentManagement_Header_Title">
+        <Font>Verdana</Font>
+        <Size>13</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+         <Bold />
+    </TextStyle>
+
+    <TextStyle name="ContentManagement_Item_Label">
+        <Font>Verdana</Font>
+        <Size>13</Size>
+        <Color r="255" g="255" b="255" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+
+    <TextStyle name="AvailableDownload_Count_DisplayText">
+        <Font>Tahoma</Font>
+        <Size>13</Size>
+        <Color r="205" g="209" b="210" a="255"/>
+        <HAlign>left</HAlign>
+        <VAlign>center</VAlign>
+        <Bold />
+    </TextStyle>
+
+ </TextStyles>

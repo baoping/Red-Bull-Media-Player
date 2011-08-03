@@ -1,0 +1,6 @@
+<textitem id="e386e193-f1a3-4423-927f-b99bdc45bea5" start="10" duration="20">
+	<fadein>30</fadein>
+	      <fadeout>40</fadeout>
+	      <content><![CDATA[TestContent]]></content>
+	      <link type="50"><![CDATA[http://www.TestContent.com]]></link>
+	    </textitem>

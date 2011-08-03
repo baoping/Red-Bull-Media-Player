@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module
+    name="Root"
+    minVersion="1.0.0"
+    library="libRootModule.so">
+	<ModuleConfig
+	    instanceName="DefaultInstance"
+	    UIRegion="Root"
+	/>
+	<Module
+	    name="InternetConnectionChecker"
+	    min="1.0.0"
+	    library="libInternetConnectionCheckerModule.so">
+	    <ModuleConfig
+		instanceName="DefaultInstance"
+	    />
+
+
+	</Module>
+        <Module
+            name="MediaLibrary"
+            min="1.0.0"
+            library="libMediaLibraryModule.so">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+            />
+
+        </Module>
+	<Module
+		name="XmlNewsFeed"
+		min="1.0.0"
+		library="libXmlNewsFeedModule.so">
+		<ModuleConfig
+		    instanceName="DefaultInstance"
+		/>
+	</Module>
+        <Module
+            name="CentralUI"
+            minVersion="1.0.0"
+            library="libCentralUIModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="CentralRegion" />
+        </Module>
+        <Module
+            name="PlaylistCreator"
+            minVersion="1.0.0"
+            library="libPlaylistCreatorModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance" />
+        </Module>
+        <Module
+            name="Playlist"
+            minVersion="1.0.0"
+            library="libPlaylistModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlaylistRegion" />
+        </Module>
+          <Module
+            name="GridViewPlaylist"
+            minVersion="1.0.0"
+            library="libGridViewPlaylistModule.so">
+            <ModuleConfig
+                instanceName="DefaultInstance"
+                UIRegion="GridViewPlaylistRegion" />
+        </Module>
+        <Module
+            name="CoverViewPlaylist"
+            minVersion="1.0.0"
+            library="libCoverViewPlaylistModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="CoverViewPlaylistRegion" />
+        </Module>
+         <Module
+            name="ListViewPlaylist"
+            minVersion="1.0.0"
+            library="libListViewPlaylistModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ListViewPlaylistRegion" />
+        </Module>
+        <Module
+            name="Player"
+            minVersion="1.0.0"
+            library="libPlayerModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlayerRegion" />
+        </Module>
+        <Module
+            name="ControllBar"
+            minVersion="1.0.0"
+            library="libControllBarModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ControllBarRegion" />
+        </Module>
+        <Module
+            name="SeekBar"
+            minVersion="1.0.0"
+            library="libSeekBarModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="SeekBarRegion" />
+        </Module>
+        <Module
+            name="VolumeBar"
+            minVersion="1.0.0"
+            library="libVolumeBarModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="VolumeBarRegion" />
+        </Module>
+        <Module
+            name="ChapterSelect"
+            minVersion="1.0.0"
+            library="libChapterSelectModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="ChapterSelectRegion" />
+        </Module>
+        <Module
+            name="PlayerCloseButton"
+            minVersion="1.0.0"
+            library="libPlayerCloseButtonModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="PlayerCloseButtonRegion" />
+        </Module>
+        <Module
+            name="TopUI"
+            minVersion="1.0.0"
+            library="libTopUIModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="TopRegion" />
+        </Module>
+        <Module
+            name="SearchUI"
+            minVersion="1.0.0"
+            library="libSearchUIModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="SearchRegion" />
+        </Module>
+        <Module
+            name="BottomUI"
+            minVersion="1.0.0"
+            library="libBottomUIModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="BottomRegion" />
+        </Module>
+        <Module
+            name="FunctionSelect"
+            minVersion="1.0.0"
+            library="libFunctionSelectModule.so">
+                <ModuleConfig
+                    instanceName="DefaultInstance"
+                    UIRegion="FunctionSelectRegion" />
+        </Module>
+        <Module
+	    name="NewsTicker"
+	    minVersion="1.0.0"
+	    library="libNewsTickerModule.so">
+		<ModuleConfig
+		    instanceName="DefaultNewsTicker"
+                    UIRegion="NewsTickerRegion"
+                />
+                <!--<Module
+		    name="NewsDisplay"
+		    minVersion="1.0.0"
+		    library="libNewsDisplayModule.so">
+		    <ModuleConfig
+                        UIRegion="CentralRegion"
+                    />
+            </Module>-->
+	 </Module>
+	 <Module
+	    name="SnapshotCreator"
+	    minVersion="1.0.0"
+	    library="libSnapshotCreatorModule.so">
+		<ModuleConfig
+		    instanceName="DefaultInstance" />
+	</Module>
+</Module>

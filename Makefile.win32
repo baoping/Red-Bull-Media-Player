@@ -1,0 +1,23 @@
+QMAKE		= /usr/bin/qmake
+QMAKE_ARGS 	= "CONFIG += x-win32 use_win32_libs" -spec qmake_mkspecs/imcross-win32-x-g++ -recursive
+MAKE 		= /usr/bin/make
+QT_BIN_DIR 	= ./3rdParty/Win32/Qt-4.5.2
+RELEASE_DIR	= ./bin/Win32/RedBullMediaPlayer
+VLC_BIN_DIR	= ./bin/Win32/VLC
+
+
+all: qmake clean build build_package
+
+qmake: 
+	@${QMAKE} ${QMAKE_ARGS}
+clean:
+	@${MAKE} clean 
+build: 
+	@${MAKE} 
+build_package:
+	@${MAKE} build_package
+
+
+
+
+

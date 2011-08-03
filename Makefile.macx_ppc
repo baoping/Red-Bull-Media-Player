@@ -1,0 +1,35 @@
+
+QMAKE		= /usr/bin/qmake
+QMAKE_ARGS 	= -spec macx-g++ -recursive "CONFIG += ppc"
+MAKE 		= /usr/bin/make
+QMAKE_ARGS_DEBUG 	= -spec macx-g++ -recursive "CONFIG += force_debug ppc"
+# all: fix_links qmake clean build build_package
+all: setup_bundle_dir fix_links qmake build build_package deploy_tests run_tests
+debug: setup_bundle_dir fix_links qmake_debug build build_package deploy_tests run_tests
+fast: setup_bundle_dir fix_links build build_package deploy_tests
+setup_bundle_dir:
+	mkdir -p ./bin/MacOSX/release/Player.app/Contents/MacOS/
+
+qmake:
+	@${QMAKE} ${QMAKE_ARGS}
+
+qmake_debug:
+	@${QMAKE} ${QMAKE_ARGS_DEBUG}
+
+clean:
+	@${MAKE} clean
+
+build:
+	@${MAKE}
+
+build_package:
+	@${MAKE} build_package
+
+fix_links:
+	rm ./bin/MacOSX/Setup/DYNLIBS; bash ./Setup/BuildPackage/fix_links.sh ppc;
+
+deploy_tests:
+	@${MAKE} setup_test_dir
+
+run_tests:
+	rake -f RakeFile.rb parsexml

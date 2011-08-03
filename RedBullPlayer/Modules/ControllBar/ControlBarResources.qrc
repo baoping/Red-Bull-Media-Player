@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/" >
+        <file alias="background" >imageResources/backgrounbd_controlBar.png</file>
+    </qresource>
+</RCC>

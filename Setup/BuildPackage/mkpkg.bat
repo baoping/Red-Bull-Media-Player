@@ -1,0 +1,44 @@
+@echo off
+
+:: exec starts here
+
+
+set INSTALLER_STUB=%1
+set QCOMPRESS_BIN=%2
+set RUNTIME_DEPS_DIR=%3
+set ARTEFACTS_DIR=%4
+set TARGET_DIR=%5
+set TARGET_NAME=%6
+set PKG_BUILD_DIR=%7
+set ROOT_DIR=%8
+set PWD=%~dp0
+
+@echo "Building..."
+@echo INSTALLER_STUB: %INSTALLER_STUB%
+@echo PKG_BUILD_DIR: %PKG_BUILD_DIR%
+@echo QCOMPRESS_BIN: %QCOMPRESS_BIN%
+@echo RUNTIME_DEPS_DIR: %RUNTIME_DEPS_DIR%
+@echo ARTEFACTS_DIR: %ARTEFACTS_DIR%
+echo TARGET_DIR: %TARGET_DIR%
+@echo TARGET_NAME: %TARGET_NAME%
+echo ROOT_DIR: %ROOT_DIR%
+
+rmdir /Q /S %PKG_BUILD_DIR%
+mkdir %PKG_BUILD_DIR%
+mkdir %PKG_BUILD_DIR%\bin
+mkdir %TARGET_DIR%
+
+xcopy %ROOT_DIR%autorun.inf %TARGET_DIR% /Y
+xcopy %ARTEFACTS_DIR%* %PKG_BUILD_DIR%\bin\ /Y /S /I
+xcopy %RUNTIME_DEPS_DIR%* %PKG_BUILD_DIR%\bin\ /Y /S /I
+echo F | xcopy %INSTALLER_STUB% %PKG_BUILD_DIR%\%TARGET_NAME% /Y /I
+xcopy %RUNTIME_DEPS_DIR%QtCore4.dll %PKG_BUILD_DIR% /Y
+xcopy %ARTEFACTS_DIR%Package.dll %PKG_BUILD_DIR% /Y
+
+cd %PKG_BUILD_DIR%\bin
+%QCOMPRESS_BIN% directory . . ..\%TARGET_NAME%
+xcopy ..\%TARGET_NAME% %TARGET_DIR% /Y
+cd %PWD%
+rmdir /Q /S %PKG_BUILD_DIR%\bin\
+rmdir /Q /S %PKG_BUILD_DIR%
+

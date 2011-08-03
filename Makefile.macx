@@ -1,0 +1,62 @@
+
+QMAKE		= /usr/bin/qmake
+QMAKE_ARGS 	= -spec macx-g++ -recursive
+MAKE 		= /usr/bin/make
+QMAKE_ARGS_DEBUG 	= -spec macx-g++ -recursive "CONFIG += force_debug"
+# all: fix_links qmake clean build build_package
+all: download_precompiled unpack_precompiled_dependencies setup_bundle_dir fix_links qmake build build_package deploy_tests run_tests
+debug: setup_bundle_dir fix_links qmake_debug build build_package deploy_tests run_tests
+fast: setup_bundle_dir fix_links build build_package deploy_tests
+updater: build_updater_qmake build_updater_app build_updater_installname
+clean_updater: build_updater_qmake clean_updater_app
+
+download_precompiled:
+	rake -f RakeFile.rb download_precompiled
+
+unpack_precompiled_dependencies:
+	rake -f RakeFile.rb unpack_precompiled_dependencies
+
+setup_bundle_dir:
+	mkdir -p ./bin/MacOSX/release/Player.app/Contents/MacOS/
+
+qmake: 
+	@${QMAKE} ${QMAKE_ARGS}
+
+qmake_debug:
+	@${QMAKE} ${QMAKE_ARGS_DEBUG}
+
+clean:
+	@${MAKE} clean	
+
+build: 
+	@${MAKE}
+
+build_package:
+	@${MAKE} build_package
+
+fix_links:
+	rm ./bin/MacOSX/Setup/DYNLIBS; bash ./Setup/BuildPackage/fix_links.sh;
+
+deploy_tests:
+	@${MAKE} setup_test_dir
+
+run_tests:
+	rake -f RakeFile.rb parsexml
+
+build_updater_qmake:
+	cd Setup/Updater/ && ${QMAKE} ${QMAKE_ARGS}
+
+build_updater_app:
+	cd Setup/Updater/ && ${MAKE}
+
+build_updater_installname:
+	cd ./bin/MacOSX/release/ && \
+	install_name_tool -change QtXml.framework/Versions/4/QtXml @executable_path/../Frameworks/QtXml.framework/Versions/4/QtXml Updtr && \
+	install_name_tool -change QtGui.framework/Versions/4/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/4/QtGui Updtr && \
+	install_name_tool -change QtNetwork.framework/Versions/4/QtNetwork @executable_path/../Frameworks/QtNetwork.framework/Versions/4/QtNetwork Updtr && \
+	install_name_tool -change QtCore.framework/Versions/4/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore Updtr && \
+	install_name_tool -change QtSql.framework/Versions/4/QtSql @executable_path/../Frameworks/QtSql.framework/Versions/4/QtSql Updtr && \
+	install_name_tool -change liblog4qt-0.3.1.dylib @executable_path/../Frameworks/liblog4qt-0.3.1.dylib Updtr
+
+clean_updater_app:
+	cd Setup/Updater/ && ${MAKE} clean

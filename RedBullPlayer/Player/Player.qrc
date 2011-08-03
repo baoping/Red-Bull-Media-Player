@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/" >
+        <file alias="small" >small_splash.png</file>
+        <file alias="pointImage" >point_bigger.png</file>
+        <file alias="dialog_background" >dialog_background.png</file>
+        <file alias="dialog_button_ok" >dialog_button_ok.png</file>
+        <file alias="dialog_button_ok_pressed" >dialog_button_ok_pressed.png</file>
+        <file alias="dialog_icon" >dialog_icon.png</file>
+        <file>update_process_streifen.png</file>
+        <file>update_process_cancel.png</file>
+        <file>update_process_cancel_pressed.png</file>
+        <file alias="splash" >splash.png</file>
+    </qresource>
+</RCC>

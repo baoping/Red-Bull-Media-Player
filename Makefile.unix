@@ -1,0 +1,56 @@
+
+QMAKE		= /usr/bin/qmake
+QMAKE_ARGS 	= -recursive
+MAKE 		= /usr/bin/make
+QMAKE_ARGS_DEBUG = "CONFIG += force_debug"
+
+all: vlc download_precompiled unpack installer qmake clean build build_package deploy_tests run_tests
+debug: qmake_debug clean build build_package deploy_tests run_tests
+novlc: qmake clean build build_package deploy_tests run_tests
+justbuildpackage: qmake clean build build_package
+# debug: qmake_debug build build_package
+updater: build_updater_qmake build_updater_app
+clean_updater: build_updater_qmake clean_updater_app
+rebuild_package: qmake build build_package
+
+download_precompiled:
+	rake -f RakeFile.rb download_precompiled
+
+unpack:
+	rake -f RakeFile.rb unpack_precompiled_dependencies
+
+installer:
+	rake -f RakeFile.rb build_installer
+
+vlc:
+	@${MAKE} -f Makefile.vlc_unix
+
+qmake: 
+	@${QMAKE} ${QMAKE_ARGS}
+
+qmake_debug:
+	@${QMAKE} ${QMAKE_ARGS_DEBUG}
+
+clean:
+	@${MAKE} clean	
+
+build: 
+	@${MAKE}
+
+build_package:
+	@${MAKE} build_package
+
+deploy_tests:
+	@${MAKE} setup_test_dir
+
+run_tests:
+	rake -f RakeFile.rb parsexml
+
+build_updater_qmake:
+	cd Setup/Updater/ && ${QMAKE} ${QMAKE_ARGS}
+
+build_updater_app:
+	cd Setup/Updater/ && ${MAKE}
+
+clean_updater_app:
+	cd Setup/Updater/ && ${MAKE} clean

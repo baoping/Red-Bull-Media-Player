@@ -1,0 +1,89 @@
+QMAKE		= /usr/bin/qmake
+QMAKE_ARGS 	= -recursive
+MAKE 		= /usr/bin/make
+
+PWD		= `pwd`
+INSTALLDIR	= ${PWD}/../vlc-1.1.x-BuildDir/Linux
+
+VLC_SOURCE_DIR	= ${PWD}/3rdParty/src/vlc-1.1
+
+LINUX_RUNTIME_DIR = ${PWD}/3rdParty/src/vlc-1.1.x-BuildDir/Linux_runtime
+
+BUILD_DEPENDENCIES = 	automake autoconf libxcb-xv0 libxcb-xv0-dev libxcb-xvmc0 libxcb-xvmc0-dev libxcb-shm0 \
+			libxcb-shm0-dev libx11-xcb-dev libx11-xcb1 libfluidsynth-dev libdirac-dev \
+			libdirac0c2a libzvbi-dev libzvbi0 libsqlite3-dev libsqlite3-0 libraw1394-dev \
+			libraw1394-11 libgnome-vfsmm-2.6-dev libgsf-gnome-1-114 libgsf-gnome-1-dev \
+			libcddb2 libcddb2-dev librsvg2-dev librsvg2-2 libportaudio2 libportaudio-dev \
+			libportaudio0 libupnp3-dev libupnp3 libgoocanvas-dev libgoocanvas3 libprojectm2 \
+			libprojectm-dev libudev-dev libudev0 libmtp-dev libmtp8 libosso1 libosso-dev \
+			autoconf libtool libmad0-dev libmad0 libhal-dev libhal-storage-dev libhal-storage1 \
+			libavcodec-dev libavcodec52 libfaad-dev libgsm1-dev libogg-dev libschroedinger-dev \
+			libspeex-dev libtheora-dev libvorbis-dev libdc1394-22-dev hal-doc libdc1394-22 \
+			liboil0.3-dev libvorbis0a libvorbisenc2 libvorbisfile3 libavutil-dev libavutil49 \
+			libavformat-dev libavformat52 libswscale-dev libswscale0 liblivemedia-dev \
+			libpostproc-dev libpostproc51 libtag1-dev libtag1c2a libtag-extras-dev \
+			libtag-extras1 liba52-0.7.4 liba52-0.7.4-dev libv4l-dev libdca-dev \
+			dh-buildinfo diffstat libaa1-dev libass-dev libaudiofile-dev libcaca-dev libcdio-dev \
+			libdvbpsi4-dev libdvdnav-dev libdvdread-dev libebml-dev libenca-dev libesd0-dev \
+			libflac-dev libfribidi-dev libggi-target-x libggi2 libggi2-dev libggimisc2 \
+			libggimisc2-dev libgif-dev libgii1 libgii1-dev libgii1-target-x libid3tag0-dev \
+			libimlib2 libimlib2-dev libiso9660-dev liblircclient-dev liblua5.1-0-dev \
+			libmatroska-dev libmodplug-dev libmozjs-dev libmozjs0d libmpcdec-dev libmpeg2-4-dev \
+			libncursesw5-dev libnotify-dev libnspr4-dev libnss3-dev libpulse-dev \
+			libpulse-mainloop-glib0 libqt4-sql-sqlite libsdl-image1.2-dev libsdl1.2-dev \
+			libshout3-dev libslang2-dev libsmbclient-dev libsvga1 libsvga1-dev libtar-dev \
+			libtiff4-dev libtiffxx0c2 libtwolame-dev libvcdinfo-dev libx264-dev libxpm-dev \
+			libxul-common libxul-dev libxul0d libxv-dev libxxf86dga-dev libxxf86vm-dev nasm \
+			qt4-designer qt4-dev-tools qt4-doc quilt x11proto-video-dev x11proto-xf86dga-dev \
+			x11proto-xf86vidmode-dev xulrunner lua50 libportaudio-dev libportaudio2 \
+			libsdl-image1.2-dev libsdl-image1.2 libmtp-dev libmtp8
+
+VLC_CONFIGURE_ARGS = --prefix=${INSTALLDIR} 	--enable-xvideo  \
+						--enable-sdl   \
+						--enable-mad \
+						--enable-a52 \
+						--enable-dca \
+						--enable-libmpeg2 \
+						--enable-dvdnav \
+						--enable-faad \
+						--enable-vorbis \
+						--enable-ogg \
+						--enable-theora \
+						--enable-mkv \
+						--enable-freetype \
+						--enable-fribidi \
+						--enable-speex \
+						--enable-flac \
+						--enable-live555 \
+ 						--enable-caca \
+						--enable-skins2 \
+						--enable-alsa \
+						--enable-ncurses \
+						--disable-qt4 \
+						--disable-skins2
+
+
+all: bootstrap configure build install player_runtime_deps
+
+install_dependencies:
+	sudo apt-get install ${BUILD_DEPENDENCIES}
+
+bootstrap: 
+	${VLC_SOURCE_DIR}/bootstrap
+	
+configure:
+	cd ${VLC_SOURCE_DIR} && echo "install dir prefix: ${INSTALLDIR}" && ./configure ${VLC_CONFIGURE_ARGS}
+
+build:
+	cd ${VLC_SOURCE_DIR} && make
+	
+install: 
+	cd ${VLC_SOURCE_DIR} && make install
+	
+player_runtime_deps:
+	mkdir -p $(LINUX_RUNTIME_DIR); \
+	cp -v ./3rdParty/src/vlc-1.1.x-BuildDir/Linux/lib/libvlc* $(LINUX_RUNTIME_DIR)/; \
+	cp -rvp ./3rdParty/src/vlc-1.1.x-BuildDir/Linux/lib/vlc $(LINUX_RUNTIME_DIR)/plugins
+
+	
+	

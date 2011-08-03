@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>dialog_background.png</file>
+        <file>dialog_button_ok.png</file>
+        <file>dialog_button_ok_pressed.png</file>
+        <file>dialog_icon.png</file>
+        <file>update_process_streifen.png</file>
+        <file>update_process_cancel.png</file>
+        <file>update_process_cancel_pressed.png</file>
+    </qresource>
+</RCC>

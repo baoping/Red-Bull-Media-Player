@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module
+    name="Root"
+    minVersion="1.0.0"
+    library="RootModule">
+	<ModuleConfig
+	    instanceName="DefaultInstance"
+	    UIRegion="Root"
+	/>
+	<Module
+	    name="NewsTicker"
+	    minVersion="1.0.0"
+            library="NewsTickerModule">
+	    <ModuleConfig
+		instanceName="DefaultNewsTicker"
+		UIRegion="TopRegion"
+	    />
+	<Module
+	    name="FakeModule1"
+	    minVersion="1.0.0"
+	    library="FakeModule1">
+	    <ModuleConfig />
+    </Module>
+</Module>

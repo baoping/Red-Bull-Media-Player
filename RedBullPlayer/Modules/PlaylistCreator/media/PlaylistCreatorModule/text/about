@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Red Bull Player {#MajorVersion}.{#MinorVersion} - About</title>
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:12px;
+	}
+h3 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:60px;
+	color:#FFFFFF;
+	}
+h4 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:18px;
+	color:#FFFFFF;
+	}
+.red {
+	font-weight:bold;
+	color:#DD013F;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:12px;
+	}
+p {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:12px;	
+	}
+a:link {
+	text-decoration:underline;	 
+	color:#fff;
+	}
+a:hover { 
+	text-decoration:none;
+	color:#DD013F;
+	}
+
+</style>
+</head>
+<body>
+<h3>Red Bull Media Player, Version {#MajorVersion}.{#MinorVersion}.{#Build}.{#Revision}</h3>
+ 
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> is a free media player for the play-back of videos, audio files, pictures and live streams..</p>
+ 
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> a portable application for Windows, MacOS and Linux.</p>
+ 
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> is free software based on GPLv3 license. This software is intended as a gift to all users. We invite everybody to share it with others, always subject to the terms and conditions of the General Public License, Version 3, 29 June 2007. </p>
+
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> has been developed by mii - marcus izmir informationsmanagement GmbH for Red Bull Media House GmbH.</p>
+ 
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> is based on VLC 1.1 (see <a href="http://www.videolan.org">www.videolan.org</a>) for the play-back of audio and video content. It is also based on QT 4.5 (<a href="http://qt.nokia.com">qt.nokia.com</a>) providing platform independent GUI development.</p>
+ 
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> uses TagLib, V1.6.1, LGPL/MPL, Mozilla Public License, Version 1.1 (<a href="http://developer.kde.org/~wheeler/taglib.html">http://developer.kde.org/~wheeler/taglib.html</a> providing Meta information for Media files.</p>
+
+<p>The <span class="red">Red Bull </span> <b>Media Player</b> is furthermore based on SQLite, V3.6.22, public domain (<a href="http://www.sqlite.org">http://www.sqlite.org</a>) to store media data.</p>
+
+<h4>Legal Notices:</h4>
+
+<p>Users shall take notice of the following:
+
+<ul>
+<li>	The <span class="red">Red Bull</span> <b> Media Player</b> is deployed &quot;as is&quot; without express or implied warranties.</li>
+<li>	There are no liabilities of any kind granted by Red Bull Media House GmbH especially for downloading, installing, storing, using and operating the <span class="red">Red Bull</span> <b> Media Player</b>.</li>
+<li>	No representations expressly or implied are made by Red Bull Media House GmbH in regard of compatibility, interoperability, suitability, operation, or hardware supported (and any components thereof) or documentation of <span class="red">Red Bull</span> <b> Media Player</b>. There are no representations oral or written, expressly or implied in terms of title, merchantability or fitness for a particular purpose nor does the license permit incorporation into proprietary software.</li>
+<li>	It is the user&apos;s sole and entire responsibility to fully comply with all the relevant public license terms as may be applicable. If changes, adoptions or enhancement of any kind are made to the open source software code the provisions of the relevant license agreements (if any) must be met by the user.</li>
+<li>	Red Bull Media House GmbH herewith explicitly states that under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, it shall be liable for any person or any indirect, special, incidental or consequential damages of any character including, without limitation, damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such person shall have been informed of the possibility of such damages. Where the applicable jurisdiction does not allow this limitation of liability, it shall not apply to the extent set forth by mandatory law.</li>   
+<li>	It is at Red Bull Mobile House&apos;s sole discretion to further develop, enhance, improve, maintain, support or stop the distribution of  the <span class="red">Red Bull</span> <b> Media Player</b> or not. </li>
+<li>	Changes to be made to the <span class="red">Red Bull</span> <b> Media Player</b> by Red Bull Mobile House or at Red Bull Mobile House&apos;s request by a third party shall not be subject to any notice.</li>
+<li>	The Intellectual Property Right (IPR) connected with or linked or tied to the use or operation of <span class="red">Red Bull</span> <b> Media Player</b> such as but not limited to names, logos, patents, copyrights, trademarks, design, buttons, icons, graphics and scripts shall be and shall remain the sole property of Red Bull Mobile House (or Red Bull GmbH or any other group company of Red Bull, as the case may be) and shall be not subject to the terms and conditions of GNU or other public license agreements. The right to use of the <span class="red">Red Bull</span> <b> Media Player</b> shall not provide or assign any licenses (or part thereof) of Red Bull&apos;s IPR. Nobody shall have the right to use, copy, alter, store, modify, distribute and market the IPR of Red Bull Media House GmbH (and of any related group companies of Red Bull GmbH). All other IPR&apos;s are and shall remain the property of their respective owners.</li>
+<li>	Some of the links in this document might lead to Red Bull&apos;s site. The linked sites are not under the control of Red Bull Media House GmbH and Red Bull Media House GmbH is not responsible for the content of any linked site or any link contained in a linked site, or any changes or updates to such sites. Red Bull Media House GmbH is not responsible for webcasting or any other form of transmission received from any linked site. Red Bull Media House is providing these links to the users only as a convenience, and the inclusion of any link does not imply endorsement by Red Bull Media House GmbH of the site.</li>
+<li>	The relevant Consumer Protection Regulations under the applicable laws shall be reserved to the extent they are mandatory.</li>
+</ul>
+</p>
+<p>Copyright &copy; 2011 <br>Red Bull Media House GmbH<br>
+<a href="http://www.redbull.de" target="_blank">www.redbull.de</a></p>
+</body></html>

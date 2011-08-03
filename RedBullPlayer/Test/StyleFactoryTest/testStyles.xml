@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextStyles>
+    <TextStyle name="SearchUI_HeaderText">
+        <Font>Tahoma</Font>
+        <Size>12</Size>
+        <Bold/>
+        <Italic/>
+        <Color r="255" g="0" b="0" a="0"/>
+        <HAlign>left</HAlign>
+        <VAlign>top</VAlign>
+    </TextStyle>
+    <TextStyle name="CoverView_HeaderText">
+        <Font>Tahoma</Font>
+        <Size>10</Size>
+        <Color r="255" g="0" b="0" a="0"/>
+        <HAlign>right</HAlign>
+        <VAlign>bottom</VAlign>
+    </TextStyle>
+    <TextStyle name="AboutBox_Text">
+        <Font>Tahoma</Font>
+        <Size>11</Size>
+        <Italic/>
+        <Color r="255" g="0" b="0" a="0"/>
+        <HAlign>center</HAlign>
+        <VAlign>center</VAlign>
+    </TextStyle>
+ </TextStyles>

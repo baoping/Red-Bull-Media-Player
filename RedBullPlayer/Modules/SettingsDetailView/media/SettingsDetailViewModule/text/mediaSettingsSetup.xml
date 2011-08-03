@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings type="media">
+	<Section id="scanDirectoriesSettings" title="Scan Directories for Playlist items" help="Set which directories should be scanned for playlist items, when Player is launched.">
+		
+	</Section>
+
+	<Section id="fileExtensionsSettings" title="File-Extensions" help="Set file extensions which should be handled by the Player. (Note that some extensions may not work for videos, audios and pictures.)">
+		<SubSection id="extensionsHandleMediaPlayer" title="Extensions handled by Red Bull Media Player">
+			<Setting id="videoExtensions" label="Videos:" type="fileExtensions" />
+			<Setting id="audioExtensions" label="Audio files:" type="fileExtensions" />
+			<Setting id="imageExtensions" label="Pictures:" type="fileExtensions" />
+		</SubSection>
+		<SubSection id="extensionsHandleExtern" title="Extensions handled by external Applications">
+			<Setting id="documentsExtensions" label="WordProcessing:" type="fileExtensions" />
+			<Setting id="presentationExtensions" label="Presentations:" type="fileExtensions" />
+			<Setting id="spreadSheetExtensions" label="Spreadsheets:" type="fileExtensions" />
+			<Setting id="PDF" label="PDFs:" type="fileExtensions" />
+			<Setting id="othersExtensions" label="Other Documents:" type="fileExtensions" />
+		</SubSection>
+	</Section>
+</Settings>

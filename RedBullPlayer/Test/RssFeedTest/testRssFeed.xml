@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+        <channel>
+                <title>Title of my PodCast</title>
+                <description>Description of my PodCast</description>
+                <link>URL to my PodCast's Homepage</link>
+                <language>de-at</language>
+                <copyright>Any Copyright Things</copyright>
+                <lastBuildDate>Mon, 22 Feb 2010 10:30:00 +0100</lastBuildDate>
+                <pubDate>Mon, 22 Feb 2010 10:30:00 +0100</pubDate>
+                <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+                <webMaster>Webmaster's Email Adress</webMaster>
+
+                <image>
+                        <url>URL to my PodCast Image Page</url>
+                        <title>My PodCast Image Title</title>
+                        <link>http://localhost/podcast/PodCastPicture.jpg</link>
+                </image>
+
+                <itunes:author>iTunes PodCast Author</itunes:author>
+                <itunes:subtitle>iTunes PodCast Subtitle</itunes:subtitle>
+                <itunes:summary>iTunes PodCast Summary</itunes:summary>
+
+                <itunes:owner>
+                        <itunes:name>First- and Lastname</itunes:name>
+                        <itunes:email>Email Adress</itunes:email>
+                </itunes:owner>
+
+                <itunes:explicit>No</itunes:explicit>
+
+                <itunes:image href="http://localhost/podcast/PodCastPicture.jpg"/>
+
+                <itunes:category text="First Category Level">
+                        <itunes:category text="Sub-Category"/>
+                </itunes:category>
+
+                <item>
+                        <title>My First PodCast Item</title>
+                        <link>http://localhost/podcast/FirstItem.mp3</link>
+                        <guid>Unique Name for my first Item</guid>
+                        <description>Description of my First PodCast Item</description>
+                        <enclosure url="http://localhost/podcast/FirstItem.mp3" length="450104" type="audio/mpeg"/>
+                        <category>Category of My First PodCast Item</category>
+                        <pubDate>Mon, 22 Feb 2010 10:30:00 +0100</pubDate>
+
+                        <itunes:author>iTunes Author of my first PodCast Item</itunes:author>
+                        <itunes:explicit>No</itunes:explicit>
+                        <itunes:subtitle>iTunes SubTitle</itunes:subtitle>
+                        <itunes:summary>iTunes Summary</itunes:summary>
+                        <itunes:duration>00:00:26</itunes:duration>
+                        <itunes:keywords>Keywords of the PodCast</itunes:keywords>
+                </item>
+
+                <item>
+                        <title>My Second PodCast Item</title>
+                        <link>http://localhost/podcast/SecondItem.ogg</link>
+                        <guid>Unique Name for my second Item</guid>
+                        <description>Description of my Second PodCast Item</description>
+                        <enclosure url="http://localhost/podcast/SecondItem.ogg" length="421571" type="application/ogg"/>
+                        <category>Category of My Second PodCast Item</category>
+                        <pubDate>Mon, 22 Feb 2010 10:30:00 +0100</pubDate>
+
+                        <itunes:author>iTunes Author of my second PodCast Item</itunes:author>
+                        <itunes:explicit>No</itunes:explicit>
+                        <itunes:subtitle>iTunes SubTitle</itunes:subtitle>
+                        <itunes:summary>iTunes Summary</itunes:summary>
+                        <itunes:duration>00:00:26</itunes:duration>
+                        <itunes:keywords>Keywords of the PodCast</itunes:keywords>
+                </item>
+
+                <item>
+                        <title>My Third PodCast Item</title>
+                        <link>http://localhost/podcast/ThirdItem.avi</link>
+                        <guid>Unique Name for my third Item</guid>
+                        <description>Description of my Third PodCast Item</description>
+                        <enclosure url="http://localhost/podcast/ThirdItem.avi" length="83917712" type="video/x-msvideo"/>
+                        <category>Category of My Third PodCast Item</category>
+                        <pubDate>Mon, 22 Feb 2010 10:30:00 +0100</pubDate>
+
+                        <itunes:author>iTunes Author of my third PodCast Item</itunes:author>
+                        <itunes:explicit>Yes</itunes:explicit>
+                        <itunes:subtitle>iTunes SubTitle</itunes:subtitle>
+                        <itunes:summary>iTunes Summary</itunes:summary>
+                        <itunes:duration>00:02:20</itunes:duration>
+                        <itunes:keywords>Keywords of the PodCast</itunes:keywords>
+                </item>
+        </channel>
+</rss>

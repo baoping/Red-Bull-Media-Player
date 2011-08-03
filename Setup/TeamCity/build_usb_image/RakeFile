@@ -1,0 +1,95 @@
+require 'albacore'
+require 'fileutils'
+gem 'rubyzip'
+require 'zip/zip'
+require 'zip/zipfilesystem'
+
+def get_version
+	ENV['BUILD_NUMBER'] || '0'
+end
+
+task :default => [:package_version_info, :zip_image] do
+	
+end
+
+def set_version
+	version_file = "version.nfo"
+	puts "*** Setting version to #{get_version}"
+	file = File.open(version_file)
+	file.replace("{build}", get_version)
+end
+
+task :unzip_macos_package do
+   zip_filename = "Player.app.zip"
+   OUTDIR="." 
+   Zip::ZipFile::open(zip_filename) { 
+      |zf| 
+      zf.each { |e| 
+        fpath = File.join(OUTDIR, e.name) 
+        FileUtils.mkdir_p(File.dirname(fpath)) 
+        zf.extract(e, fpath) unless e.symlink?
+      } 
+   } 
+end
+
+task :package_version_info => [:unzip_macos_package] do
+   FileUtils.mv('Player.app', 'RedBullPlayer-MacOS.app')
+   cp_r('RedBullPlayer-MacOS.app/Contents/MacOS/version.nfo', 'version.nfo')
+   set_version
+	sh "tools/QCompress replace version.nfo version.nfo . RedBullPlayer.exe"
+	sh "tools/QCompress replace version.nfo version.nfo . RedBullPlayer"
+   cp_r('version.nfo', 'RedBullPlayer-MacOS.app/Contents/MacOS/')
+   FileUtils.mv('RedBullPlayer.exe', 'RedBullPlayer-Windows.exe')
+   FileUtils.mv('RedBullPlayer', 'RedBullPlayer-Linux')   
+end
+
+task :zip_image do
+    zip_filename = "RedBullPlayer-Image-#{get_version}.zip"
+    mac_files = Dir.glob("RedBullPlayer-MacOS.app/**/*")
+    Zip::ZipFile.open(zip_filename, 'w') do |zipfile|
+        zipfile.add('autorun.inf', 'autorun.inf')
+        zipfile.add('RedBullPlayer-Windows.exe', 'RedBullPlayer-Windows.exe')
+        zipfile.add('RedBullPlayer-Linux', 'RedBullPlayer-Linux')
+
+        0.upto(mac_files.size-1) do |i|
+            zipfile.add(mac_files[i], mac_files[i])
+        end
+    end
+end
+
+zip :zip_image_old do |zip|
+	zip_filename = "RedBullPlayer-Image-#{get_version}.zip"
+	puts "Packaging components into file #{zip_filename}"
+	
+	rm_rf('image')
+	Dir.mkdir 'image'
+	Dir.glob("*").each do |file|
+		cp_r(file, "image") unless (file =~ /image/ || file =~ /tools/ || file =~ /\.tmp/)
+	end
+	zip.directories_to_zip = ['image']
+	zip.output_file = zip_filename
+	zip.output_path = '.'
+end
+	
+class File
+  def replace(pattern, string)
+    full_path = File.expand_path path
+    return if !File.file?(full_path)
+ 
+    reopen(full_path, 'r')
+    lines = readlines
+ 
+    changes = false
+    lines.each do |line|
+      changes = true if line.gsub!(pattern, string)
+    end
+ 
+    if changes
+      reopen(full_path, 'w')
+      lines.each do |line|
+        write(line)
+      end
+      close
+    end
+  end
+end

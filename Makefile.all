@@ -1,0 +1,15 @@
+MAKE 		= /usr/bin/make
+
+all: linux win32
+
+linux: 
+	@${MAKE} -f Makefile.unix
+
+win32:
+	@${MAKE} -f Makefile.win32 
+
+
+
+
+
+

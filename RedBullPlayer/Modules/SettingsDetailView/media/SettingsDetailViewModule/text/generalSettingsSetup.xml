@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings type="general">
+	<Section id="startupSettings" title="On Startup" help="Define Startup Behaviour Fullscreen or Window.">
+		<SubSection id="noSubSection" title="">
+			<Setting id="fullScreenSetting" label="Fullscreen Mode" type="boolSetting" />
+		</SubSection>
+	</Section>
+
+	<Section id="playlistSettings" title="Playlist" help="Loop through Playlist or stop after each playlist item.">
+		<SubSection id="noSubSection1" title="">
+			<Setting id="playlistLoop" label="Loop through Playlist" type="boolSetting" />
+			<Setting id="loopInterval" label="Loop Interval in seconds for Photos and Images" type="intSetting" />
+		</SubSection>
+	</Section>
+
+	<Section id="networkSettings" title="Network Settings" help="Define Network Settings.">
+		<SubSection id="noSubSection2" title="">
+			<Setting id="enableNetworkConnections" label="Allow News Updates, Version Checks and Checks for fresh Content" type="boolSetting" />
+			<Setting id="enableStatisticUpload" label="Anonymous Statistic Data may be collected by Red Bull Media House GmbH" type="boolSetting" />
+		</SubSection>
+	</Section>
+
+</Settings>
