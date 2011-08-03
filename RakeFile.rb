@@ -26,7 +26,7 @@ end
 
 QT_INSTALL_DIR = ENV['qt_dir'] || "D:\\Qt\\2009.03"
 
-PRECOMPILED_BINARIES_HOST="http://www.irrsinnig.org/3rdParty/"
+PRECOMPILED_BINARIES_HOST="http://<not-configured-yet>/3rdParty/"
 
 task :default => [:download_precompiled,:unpack_precompiled_dependencies,:build_installer,:clean,:qmake,:build,:setup_test_dir,:build_package,:runtests,:parsexml]
 
