@@ -1,0 +1,3 @@
+[submodule "3rdParty/src/vlc-1.1"]
+	path = 3rdParty/src/vlc-1.1
+	url = git://git.videolan.org/vlc/vlc-1.1.git
