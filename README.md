@@ -18,11 +18,11 @@ The Red Bull Media Player is built using the following frameworks and tools:
 The sources should build without modification under the following systems:
 
 - Windows Vista/Windows 7
-- Ununtu 9.10
+- Ubuntu 9.10
 - Mac OSX 10.6
 
 Porting to other platforms/os versions is mainly a matter of making VLC build and run. 
-Due to the design, the Player is delivered as a self-extracting binary package that runs without modifications on the host outside its location, all dependencies (Qt etc.) need to be packaged correctly and the runtime environment must be set up to use them (e.g. LD\_LIBRYRY\_PATH on Linux)
+Due to the design, the Player is delivered as a self-extracting binary package that runs without modifications on the host outside its location, all dependencies (Qt etc.) need to be packaged correctly and the runtime environment must be set up to use them (e.g. LD\_LIBRARY\_PATH on Linux)
 
 __Note:__ _On Mac OS the application is a simple application bundle, so packing/extracting is not required_
 
@@ -39,7 +39,7 @@ To compile, package and run the tests, execute the following commands from withi
 
 `c:\Projects\rb> rake`
 
-After the build you should find the package in __.\\bin\\Win32\\Package\\RedBullPlayer.exe__
+After the build you should find the package at __.\\bin\\Win32\\Package\\RedBullPlayer.exe__
 
 __Note:__ _Checkout the sources to a directory *near* the drives root directory. This is required as gcc (or any other component) builds up very long combined relative pathnames of included files and this leads to "file not found errors". So use something like c:\Projects\rb or similar to avoid such issues._
 
@@ -50,7 +50,7 @@ To compile, package and run the tests, execute the following commands from withi
 
 `/home/devel/RedBull/> make -f Makefile.unix` 
 
-After the build you should find the package in  __./bin/Linux/Package/RedBullPlayer__
+After the build you should find the package at  __./bin/Linux/Package/RedBullPlayer__
 
 
 ### Mac OS X
@@ -59,4 +59,4 @@ To compile, package and run the tests, execute the following commands from withi
 
 `/home/devel/RedBull/> make -f Makefile.macx` 
 
-After the build you should find the app bundle in  __./bin/MacOSX/Package/RedBullPlayer.app__ in the blue box.
+After the build you should find the app bundle at  __./bin/MacOSX/Package/RedBullPlayer.app__ 
