@@ -26,22 +26,22 @@ end
 
 QT_INSTALL_DIR = ENV['qt_dir'] || "D:\\Qt\\2009.03"
 
-PRECOMPILED_BINARIES_HOST="http://<not-configured-yet>/3rdParty/"
+PRECOMPILED_BINARIES_HOST="http://rbmpdownload.blob.core.windows.net"
 
 task :default => [:download_precompiled,:unpack_precompiled_dependencies,:build_installer,:clean,:qmake,:build,:setup_test_dir,:build_package,:runtests,:parsexml]
 
 task :download_precompiled do
 	if RUBY_PLATFORM =~ /.*linux$/ 
 		download_file_if_required(  
-			"#{PRECOMPILED_BINARIES_HOST}/Linux/PreCompiled.tar.gz", 
+			"#{PRECOMPILED_BINARIES_HOST}/linux/PreCompiled.tar.gz", 
 			"./3rdParty/Linux/PreCompiled.tar.gz" )
 	elsif  RUBY_PLATFORM =~ /darwin/		
 		download_file_if_required( 
-			"#{PRECOMPILED_BINARIES_HOST}/MacOSX/PreCompiled.tar.gz", 
+			"#{PRECOMPILED_BINARIES_HOST}/macosx/PreCompiled.tar.gz", 
 			"./3rdParty/MacOSX/PreCompiled.tar.gz" )
 	else
 		download_file_if_required(  
-			"#{PRECOMPILED_BINARIES_HOST}/Win32/PreCompiled.zip", 
+			"#{PRECOMPILED_BINARIES_HOST}/windows/PreCompiled.zip", 
 			"./3rdParty/Win32/PreCompiled.zip" )
 	end
 end
